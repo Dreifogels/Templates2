@@ -250,9 +250,9 @@ border-radius: 15px;
 
 .myPre
 {
-    tab-size: 1; 
+    /* tab-size: 1;  */
     border: 3px solid blue; 
-    border-color:#f0ad4e;
-    border-radius: 15px;
+    border-color: red;
+    border-radius: 30px;
     font-size: 0.8rem;
 } 
