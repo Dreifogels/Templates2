@@ -1,29 +1,103 @@
-/*<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css">
+/*
+ * In <head> </head> tags
+ * Bootstrap CSS
+ * <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+ * <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css">
 */
 
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 @import url('https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css');
 
-/*
-@import url('https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js');
-@import url('https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/languages/avrasm.min.js');
-*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.longRead
+:root 
+{
+
+}
+
+.my_longRead
 {
     margin: auto;
     width: 600px;
-    text-align: justify; 
-    font-size: 16px;
+}
+
+ /* STR---------------------------------------------------------------------------
+  * ------------------------------------------------------------------------------
+  * HEADINGS
+  */
+.my_Heading
+{
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* ------------------------------ */
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+    /* font-family: ; */
+}
+
+h1.my_Heading
+{
+
+}
+
+h2.my_Heading
+{
+
+}
+
+h3.my_Heading
+{
+
+}
+
+h4.my_Heading
+{
+
+}
+
+h5.my_Heading
+{
+
+}
+
+h6.my_Heading
+{
+
+}
+ /* END ----------------------------------------------------------------------- */
+
+
+ /* STR---------------------------------------------------------------------------
+  * ------------------------------------------------------------------------------
+  * TEXT BLOCK - PARAGRAPH
+ */
+.my_TextBlock
+{
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* ------------------------------ */
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    text-align: justify; 
+
     font-weight: 300;
+    line-height: 26px;
 }
+ /* END ----------------------------------------------------------------------- */
+
 
 /* code 
 {
@@ -36,7 +110,10 @@
     font-size: 1rem;
 } */
 
-
+/* ----------------------------------------------------------
+ * ----------------------------------------------------------
+ * CALLOUTS
+ */
 .bd-callout {
     padding-top: 1rem;
     padding-right: 1rem;
@@ -57,7 +134,7 @@
 
 .bd-callout p 
 {
-    font-weight: 600;
+    font-weight: 300;
     font-size: 1.2rem;
     color: #262626;
 }
@@ -71,7 +148,8 @@
     }
     
     .bd-callout+.bd-callout {
-    margin-top: -.25rem
+    /* margin-top: -.25rem */
+    margin-top: 2rem
     }
     
     /* -------------------------------------
@@ -162,7 +240,9 @@
         {
             border-left-color: #FFFFFF
         }
-
+/* ------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------
+ */
 
 .btn {
     padding: 6px 15px;
@@ -248,28 +328,6 @@
 
 }
 
-.accordion
-{
-    /* box-shadow: 0 2px 20px 0 rgba(110, 130, 208, .18); */
-    /* border-radius: 15px; */
-
-}
-
-.accordion-body
-{
-    /* background-color: #F2F2F2; */
-}
-
-.accordion-header
-{
-
-}
-.accordion-button
-{
-    background-color: transparent !important;
-    border-radius: 15px;
-}
-
 .myPre
 {
     /* tab-size: 1;  */
@@ -289,26 +347,7 @@
     padding-left: 0px;
 } 
 
-.my_textBlock
-{
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-}
 
-.my_heading
-{
-    /* to remove space above and below */
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    /* ------------------------------ */
-
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-}
 
 .my_heading1
 {
