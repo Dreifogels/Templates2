@@ -15,8 +15,8 @@
 
 :root 
 {
-    --colorAttention: orange;
     --colorInfo: #009FC5;
+    --colorTask: #262626;
     --colorSummary: green;
 
     --calloutBorder: 1rem;
@@ -27,7 +27,7 @@
     --marginCallout: 1rem;      /* up and bottom */
 }
 
-.my_longRead
+.myLongRead
 {
     margin: auto;
     width: 600px;
@@ -59,6 +59,7 @@ h1.myHeading
 h2.myHeading
 {
     margin-top: 8rem;
+    margin-bottom: .5rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     color: var(--colorInfo);
@@ -67,6 +68,13 @@ h2.myHeading
     h2.myHeading-introduction
     {
         /* margin-top: 5rem; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        color: var(--colorInfo);
+    }
+    h2.myHeading-summary
+    {
+        margin-top: 8rem;
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
         color: var(--colorInfo);
@@ -81,14 +89,17 @@ h2.myHeading
 h3.myHeading
 {
     margin-top: 3rem;
+    margin-bottom: .5rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 h4.myHeading
 {
+    margin-top: 3rem;
+    margin-bottom: .5rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 h5.myHeading
@@ -161,9 +172,9 @@ h6.my_Heading
     margin-top: 0px;
     margin-bottom: 1rem;
     /* ------------------------------- */
-    padding-top: 3%;
+    padding-top: 2%;
     padding-right: 5%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     padding-left: 5%;
 
     border: 1px solid #E2E2E2;
@@ -172,38 +183,44 @@ h6.my_Heading
 
     background-color: #F2F2F2;
     text-align: justify;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
     .myCallout p
     {
-        font-weight: 900;
+        font-family: 'Roboto', sans-serif;
         font-size: 1.2rem;
         /* padding-bottom: 0rem; */
     }
 
     .myCallout-info {border-left-color: var(--colorInfo);}
     .myCallout-info p {color: var(--colorInfo);}
-    .myCallout-info p:before
+    .myCallout-info p::before
     {   
-        padding-right: var(--iconPaddingLeft);
-        font-family: var(--iconFontFamily);
-        content: "\e2ca";
-    }
-    .myCallout-attention{border-left-color: var(--colorAttention);}
-    .myCallout-attention p {color: var(--colorAttention);}
-    .myCallout-attention p:before
-    {
         padding-right: var(--iconPaddingLeft);
         font-family: var(--iconFontFamily);
         content: "\f0eb";
     }
-    .myCallout-summary{border-left-color: var(--colorSummary);}
-    .myCallout-summary p{color: var(--colorSummary);}
-    .myCallout-summary p:before
+
+    .myCallout-task{border-left-color: var(--colorTask);}
+    .myCallout-task p {color: var(--colorTask);}
+    .myCallout-task p::before
     {
         padding-right: var(--iconPaddingLeft);
         font-family: var(--iconFontFamily);
         content: "\f14a";
     }
+
+    .myCallout-summary{border-left-color: var(--colorSummary);}
+    .myCallout-summary p{color: var(--colorSummary);}
+    .myCallout-summary p::before
+    {
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f14a";
+    }
+
     .myCallout p:last-child {margin-bottom: 0rem;}
     .myCallout code {
     border-radius: .25rem;
@@ -227,9 +244,13 @@ h6.my_Heading
 
 .myHorizontalLine
 {
+    margin-top: 3rem;
     background-color: #FFFFFF;
     border-top: 1px dashed;
     padding: 3px 3px 3px 3px;
+/*     
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem; */
 }
 
 .myAccordion {
@@ -268,35 +289,21 @@ h6.my_Heading
     font-size: 0.9rem;
 }
 
-.myLi
+
+.myAlert
 {
-
-}
-
-.alert
-{
-    border-radius: 15px;
-
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* ------------------------------- */
     padding-top: 2%;
     padding-right: 3%;
     padding-bottom: 2%;
     padding-left: 3%;
 
-    /* to remove space above and below */
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    /* ------------------------------- */
+    border: 1px solid #fefefe;
 
-}
 
-.accordion-item
-{
-    background-color: transparent !important;
-    border: 1px solid;
-    border-color: #E2E2E2;
-    border-radius: 15px;
-    padding: 0px;
-    margin-bottom: 10 px;
 
 }
 
@@ -311,8 +318,6 @@ h6.my_Heading
     border-color: red;
     border-radius: 15px; */
     font-size: 0.8rem;
-
-
 
     padding-top: 0px;
     padding-right: 0px;
