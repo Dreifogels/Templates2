@@ -9,11 +9,22 @@
 @import url('https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css');
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 
 :root 
 {
+    --colorAttention: orange;
+    --colorInfo: #009FC5;
+    --colorSummary: green;
 
+    --calloutBorder: 1rem;
+    --iconPaddingLeft: 10px;
+    --iconFontFamily: "Font Awesome 5 Free";
+
+    --marginTextBlock: 1rem;    /* up and bottom */
+    --marginCallout: 1rem;      /* up and bottom */
 }
 
 .my_longRead
@@ -32,7 +43,6 @@
     margin-top: 0rem;
     margin-bottom: 0rem;
     /* ------------------------------ */
-
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
@@ -41,27 +51,47 @@
     /* font-family: ; */
 }
 
-h1.my_Heading
+h1.myHeading
 {
 
 }
 
-h2.my_Heading
+h2.myHeading
 {
-
+    margin-top: 8rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: var(--colorInfo);
 }
 
-h3.my_Heading
-{
+    h2.myHeading-introduction
+    {
+        /* margin-top: 5rem; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        color: var(--colorInfo);
+    }
+    h2.myHeading:before
+    {
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f07c";
+    }
 
+h3.myHeading
+{
+    margin-top: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
 }
 
-h4.my_Heading
+h4.myHeading
 {
-
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
 }
 
-h5.my_Heading
+h5.myHeading
 {
 
 }
@@ -77,27 +107,39 @@ h6.my_Heading
   * ------------------------------------------------------------------------------
   * TEXT BLOCK - PARAGRAPH
  */
-.my_TextBlock
+.myTextBlock
 {
     /* to remove space above and below */
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0px;
+    margin-bottom: var(--marginTextBlock);
     /* ------------------------------ */
-
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
 
-    font-size: 16px;
+ 
     font-family: 'Open Sans', sans-serif;
-    text-align: justify; 
-
-    font-weight: 300;
+    font-size: 16px;
     line-height: 26px;
+    letter-spacing: 0.0rem;
+    text-align: justify; 
 }
  /* END ----------------------------------------------------------------------- */
 
+ p.my_p
+ {
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* ------------------------------ */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    
+    color: red;
+ }
 
 /* code 
 {
@@ -114,135 +156,65 @@ h6.my_Heading
  * ----------------------------------------------------------
  * CALLOUTS
  */
-.bd-callout {
-    padding-top: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-
+.myCallout {
     /* to remove space above and below */
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0px;
+    margin-bottom: 1rem;
     /* ------------------------------- */
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    padding-left: 5%;
 
     border: 1px solid #E2E2E2;
-    border-left-width: 1.5rem;
+    border-left-width: var(--calloutBorder);
     border-radius: 15px;
 
     background-color: #F2F2F2;
+    text-align: justify;
 }
-
-.bd-callout p 
-{
-    font-weight: 300;
-    font-size: 1.2rem;
-    color: #262626;
-}
-   
-    .bd-callout p:last-child {
-    margin-bottom: 0
+    .myCallout p
+    {
+        font-weight: 900;
+        font-size: 1.2rem;
+        /* padding-bottom: 0rem; */
     }
-    
-    .bd-callout code {
-    border-radius: .25rem
+
+    .myCallout-info {border-left-color: var(--colorInfo);}
+    .myCallout-info p {color: var(--colorInfo);}
+    .myCallout-info p:before
+    {   
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\e2ca";
     }
-    
-    .bd-callout+.bd-callout {
-    /* margin-top: -.25rem */
-    margin-top: 2rem
+    .myCallout-attention{border-left-color: var(--colorAttention);}
+    .myCallout-attention p {color: var(--colorAttention);}
+    .myCallout-attention p:before
+    {
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f0eb";
     }
+    .myCallout-summary{border-left-color: var(--colorSummary);}
+    .myCallout-summary p{color: var(--colorSummary);}
+    .myCallout-summary p:before
+    {
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f14a";
+    }
+    .myCallout p:last-child {margin-bottom: 0rem;}
+    .myCallout code {
+    border-radius: .25rem;
+    background-color: #E2E2E2;
+    }
+    .myCallout + .myCallout {margin-top: 1rem}
     
-    /* -------------------------------------
-     * Button: Info   
-     */
-     .bd-callout-info {
-        border-left-color: #5bc0de
-        }
-        .bd-callout-info h4 {
-        color: #5bc0de
-        }
-        
-        .bd-callout-warning {
-        border-left-color: #f0ad4e
-        }
-        .bd-callout-warning h4 {
-        color: #f0ad4e
-        }
-        
-       /* -------------------------------------
-         * Button: Danger  
-         */
-        .bd-callout-danger {
-        border-left-color: #d9534f
-        }
-        .bd-callout-danger h4 {
-        color: #d9534f
-        }
-        
-        /* -------------------------------------
-         * Button: Primary 
-         */
-        .bd-callout-primary{
-        border-left-color: #007bff
-        }
-        .bd-callout-primaryh4 {
-        color: #007bff
-        }
-        
-        /* -------------------------------------
-         * Button: Sucess
-         */
-        .bd-callout-success{
-        border-left-color: #28a745
-        }
-        .bd-callout-successh4 {
-        color: #28a745
-        }
-        
-        /* -------------------------------------
-         * Button: default
-         */
-        .bd-callout-black{
-        border-left-color: #6c757d
-        }
-        .bd-callout-defaulth4 {
-        color: #6c757d
-        }
-    
-       /* -------------------------------------
-         * Button: black
-         */
-        .bd-callout-black
-        {
-            border-left-color: #262626
-        }
-
-       /* -------------------------------------
-        * Button: black
-        */
-        .bd-callout-summary
-        {
-            border-left-color: #23813F;
-        }
-
-       /* -------------------------------------
-        * Button: black
-        */
-        .bd-callout-tryItOut
-        {
-            border-left-color: #009FC5
-        }
-
-       /* -------------------------------------
-        * Button: black
-        */
-        .bd-callout-memory
-        {
-            border-left-color: #FFFFFF
-        }
 /* ------------------------------------------------------------------------------
  * ------------------------------------------------------------------------------
  */
+
 
 .btn {
     padding: 6px 15px;
@@ -330,16 +302,17 @@ h6.my_Heading
 
 .myPre
 {
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    /* ------------------------------- */
     /* tab-size: 1;  */
     /* border: 3px solid blue;  */
     border-color: red;
     border-radius: 15px; */
     font-size: 0.8rem;
 
-    /* to remove space above and below */
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    /* ------------------------------- */
+
 
     padding-top: 0px;
     padding-right: 0px;
