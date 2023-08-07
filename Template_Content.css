@@ -307,29 +307,19 @@ h6.my_Heading
     padding-left: 3%;
 
     border: 1px solid #fefefe;
-
-
-
 }
 
-.myPre
+.myCode
 {
-    /* to remove space above and below */
     margin-top: 0rem;
     margin-bottom: 1rem;
     /* ------------------------------- */
-    /* tab-size: 1;  */
-    /* border: 3px solid blue;  */
-    border-color: red;
-    border-radius: 15px; */
-    font-size: 0.8rem;
-
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
+    border-radius: 15px; */
 } 
-
 
 
 .my_heading1
@@ -386,4 +376,94 @@ h6.my_Heading
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;    
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+/* The Modal (background) */
+.modal {
+    display: none;          /* Hidden by default */
+    
+    position: fixed; /* Stay in place */
+
+    z-index: 1; /* Sit on top */
+    /* padding-top: 30px; Location of the box */
+    /* padding-bottom: 30px; */
+    left: 0;
+    top: 0; 
+    
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    
+    overflow: auto; /* Enable scroll if needed */
+    
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+.modal-content 
+{
+    margin: auto;
+
+    width: 80vw;
+    height: 85vh;
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 5%;
+    padding-left: 1%;
+
+
+
+    background-color: #fefefe;
+ 
+    border: 1px solid #888;
+    border-radius: 15px;
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.thisIsMyButton
+{
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #E2E2E2;
+    border-radius: 15px;
+    position: center;
+    background-color: white;
+}
+
+.modal h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: Black;
+}
+
+.modalText
+{
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+}
+
+.myClose
+{
+    float: right;
 }
