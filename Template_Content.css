@@ -140,6 +140,8 @@ h6.my_Heading
     line-height: 26px;
     letter-spacing: 0.0rem;
     text-align: justify; 
+    border: 1px solid #E2E2E2;
+    border-radius: 15px;
 }
  /* END ----------------------------------------------------------------------- */
 
@@ -277,7 +279,7 @@ h6.my_Heading
     margin-left: auto;
     margin-right: auto;
 
-    border-style: 1px solid #E2E2E2;
+    border: 1px solid #E2E2E2;
     border-radius: 15px; 
     display: block;
     width: 100%;
