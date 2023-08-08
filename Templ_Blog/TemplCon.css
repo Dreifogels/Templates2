@@ -1,0 +1,492 @@
+/*
+ * In <head> </head> tags
+ * Bootstrap CSS
+ * <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+ * <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css">
+*/
+
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
+@import url('https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+:root 
+{
+    --colorInfo: #009FC5; /* ... */
+    --colorTask: #262626;
+    --colorSummary: green;
+
+    --calloutBorder: 1rem;
+    --iconPaddingLeft: 10px;
+    --iconFontFamily: "Font Awesome 5 Free";
+
+    --marginTextBlock: 1rem;    /* up and bottom */
+    --marginCallout: 1rem;      /* up and bottom */
+}
+
+.myLongRead
+{
+    margin: auto;
+    width: 600px;
+}
+
+.myWordPress
+{
+    margin: auto;   
+}
+
+ /* STR---------------------------------------------------------------------------
+  * ------------------------------------------------------------------------------
+  * HEADINGS
+  */
+.my_Heading
+{
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* ------------------------------ */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+    /* font-family: ; */
+}
+
+h1.myHeading
+{
+
+}
+
+h2.myHeading
+{
+    margin-top: 8rem;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: var(--colorInfo);
+}
+
+    h2.myHeading-introduction
+    {
+        /* margin-top: 5rem; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        color: var(--colorInfo);
+    }
+    h2.myHeading-summary
+    {
+        margin-top: 8rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        color: var(--colorInfo);
+    }
+    h2.myHeading:before
+    {
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f07c";
+    }
+
+h3.myHeading
+{
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+h4.myHeading
+{
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+h5.myHeading
+{
+
+}
+
+h6.my_Heading
+{
+
+}
+ /* END ----------------------------------------------------------------------- */
+
+
+ /* STR---------------------------------------------------------------------------
+  * ------------------------------------------------------------------------------
+  * TEXT BLOCK - PARAGRAPH
+ */
+.myTextBlock
+{
+    /* to remove space above and below */
+    margin-top: 0px;
+    margin-bottom: var(--marginTextBlock);
+    /* ------------------------------ */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.0rem;
+    text-align: justify; 
+}
+ /* END ----------------------------------------------------------------------- */
+
+ p.my_p
+ {
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* ------------------------------ */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    
+    color: red;
+ }
+
+/* code 
+{
+    background-color: #F2F2F2;
+    color: #009FC5;
+    border-radius: 0.5rem;
+    padding: 1px 5px 1px;
+    white-space: nowrap;
+    font-family: Sans-Serif;
+    font-size: 1rem;
+} */
+
+/* ----------------------------------------------------------
+ * ----------------------------------------------------------
+ * CALLOUTS
+ */
+.myCallout {
+    /* to remove space above and below */
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    /* ------------------------------- */
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+
+    border: 1px solid #E2E2E2;
+    border-left-width: var(--calloutBorder);
+    border-radius: 15px;
+
+    background-color: #F2F2F2;
+    text-align: justify;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+    .myCallout p
+    {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 1.2rem !important;
+        font-weight: 600;
+        /* padding-bottom: 0rem; */
+    }
+
+    .myCallout-info {border-left-color: var(--colorInfo);}
+    .myCallout-info p {color: var(--colorInfo);}
+    .myCallout-info p::before
+    {   
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f0eb";
+    }
+
+    .myCallout-task{border-left-color: var(--colorTask);}
+    .myCallout-task p {color: var(--colorTask);}
+    .myCallout-task p::before
+    {
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f013";
+    }
+
+    .myCallout-summary{border-left-color: var(--colorSummary);}
+    .myCallout-summary p{color: var(--colorSummary);}
+    .myCallout-summary p::before
+    {
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f14a";
+    }
+
+    .myCallout p:last-child {margin-bottom: 0rem;}
+    .myCallout code {
+    border-radius: .25rem;
+    background-color: #E2E2E2;
+    }
+    .myCallout + .myCallout {margin-top: 1rem}
+    
+/* ------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------
+ */
+
+
+.btn {
+    padding: 6px 15px;
+    border: 0 none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    border: 1px solid #E2E2E2;
+}
+
+.myHorizontalLine
+{
+    margin-top: 3rem;
+    background-color: #FFFFFF;
+    border-top: 1px dashed;
+    padding: 3px 3px 3px 3px;
+/*     
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem; */
+}
+
+.myAccordion {
+/* 
+    max-width: 500px;
+    margin: 50px auto; */
+    padding-left: 10px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----  
+ * Image Formating 
+ */
+.myImg
+{
+    margin-left: auto;
+    margin-right: auto;
+    /* display: block; */
+    width: 100%;
+
+    border-radius: 15px !important;
+    border: 1px solid #E2E2E2 !important;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.myImg:hover
+{
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+.myImgContainer
+{
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+
+    width: 100%;
+}
+
+.myImgDescription
+{
+    text-align: center; 
+    font-size: 0.9em; 
+    color:#A2A2A2;
+}
+
+.myImgFullSizeLink
+{
+    text-decoration:none;
+    font-size: 0.9rem;
+}
+
+
+.myAlert
+{
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* ------------------------------- */
+    padding-top: 2%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+
+    border: 1px solid #fefefe;
+}
+
+.myCode
+{
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    /* ------------------------------- */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+    border-radius: 15px; */
+} 
+
+
+.my_heading1
+{
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+    /* ------------------------------- */
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    /* border: 3px solid red; */
+    border-top: 10px solid green;
+    border-right: 10px solid black;
+    border-bottom: 10px solid orange;
+    border-left: 10px solid red;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 50px;
+
+    background-color: #E2E2E2;
+
+}
+
+.my_spacer
+{
+    /* to remove space above and below */
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    /* ------------------------------- */
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;    
+}
+
+.my_divider
+{
+    /* to remove space above and below */
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    /* ------------------------------- */
+
+    border: 1px dashed #262626;
+    background-color: transparent !important;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;    
+}
+
+
+
+.thisIsMyButton
+{
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #E2E2E2;
+    border-radius: 15px;
+    position: center;
+    background-color: white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    height: 80%;
+    width: auto;
+    /* max-width: 50%; */
+    border-radius: 15px !important;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
