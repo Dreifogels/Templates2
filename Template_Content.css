@@ -194,8 +194,8 @@ h6.my_Heading
 }
     .myCallout p
     {
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif Im !important;
+        font-size: 1.2rem !important;
         /* padding-bottom: 0rem; */
     }
 
