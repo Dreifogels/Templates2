@@ -16,7 +16,7 @@
 
 :root 
 {
-    --colorInfo: #009FC5;
+    --colorInfo: #009FC5; /* ... */
     --colorTask: #262626;
     --colorSummary: green;
 
