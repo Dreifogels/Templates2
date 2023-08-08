@@ -215,7 +215,7 @@ h6.my_Heading
     {
         padding-right: var(--iconPaddingLeft);
         font-family: var(--iconFontFamily);
-        content: "\f14a";
+        content: "\f013";
     }
 
     .myCallout-summary{border-left-color: var(--colorSummary);}
