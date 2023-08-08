@@ -269,12 +269,12 @@ h6.my_Heading
 /* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----  
  * Image Formating 
  */
-.myImg
+.myImgNew
 {
     margin-left: auto;
     margin-right: auto;
 
-    border: 1px solid #E2E2E2;
+    border: 5px solid #E2E2E2;
     border-radius: 15px; 
     display: block;
     width: 100%;
@@ -390,13 +390,13 @@ h6.my_Heading
 }
 
  /* Style the Image Used to Trigger the Modal */
- /* #myImg {
+ .myImgNew {
     border-radius: 15px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;} */
+.myImgNew:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
