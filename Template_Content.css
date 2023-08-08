@@ -291,7 +291,6 @@ h6.my_Heading
 {
     margin-top: 0rem;
     margin-bottom: 1rem;
-    padding: 0px;
 
     margin-left: auto;
     margin-right: auto;
@@ -432,7 +431,7 @@ h6.my_Heading
     height: 80%;
     width: auto;
     /* max-width: 50%; */
-    border-radius: 15px;
+    border-radius: 15px !important;
 }
 
 /* Caption of Modal Image */
