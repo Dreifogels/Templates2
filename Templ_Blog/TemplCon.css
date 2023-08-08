@@ -16,9 +16,9 @@
 
 :root 
 {
-    --colorInfo: #009FC5; /* ... */
-    --colorTask: #262626;
-    --colorSummary: green;
+    --colorInfo: #008587; /* ... */
+    --colorTask: #313131;
+    --colorSummary: 008587;
 
     --calloutBorder: 1rem;
     --iconPaddingLeft: 10px;
