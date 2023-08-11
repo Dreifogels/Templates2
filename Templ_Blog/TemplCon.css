@@ -436,7 +436,7 @@ h6.my_Heading
 .modal-content {
     margin: auto;
     display: block;
-    height: 80%;
+    height: 75%;
     width: auto;
     /* max-width: 50%; */
     border-radius: 15px !important;
