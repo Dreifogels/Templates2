@@ -85,12 +85,12 @@ h2.myHeading
         font-size: 1.6rem;
         color: var(--colorInfo);
     }
-    h2.myHeading:before
+    /* h2.myHeading:before
     {
         padding-right: var(--iconPaddingLeft);
         font-family: var(--iconFontFamily);
         content: "\f07c";
-    }
+    } */
 
 h3.myHeading
 {
