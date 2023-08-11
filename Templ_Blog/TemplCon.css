@@ -31,7 +31,7 @@
 .myLongRead
 {
     margin: auto;
-    width: 600px;
+    width: 500px;
 }
 
 .myWordPress
@@ -143,13 +143,7 @@ h6.my_Heading
     text-align: justify; 
 }
 /* END ----------------------------------------------------------------------- */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .myTextBlock 
-    {
-        text-align: left;
-    }
-  }
+
  p.my_p
  {
     /* to remove space above and below */
@@ -373,7 +367,6 @@ h6.my_Heading
     border-bottom-left-radius: 50px;
 
     background-color: #E2E2E2;
-
 }
 
 .my_spacer
@@ -404,8 +397,6 @@ h6.my_Heading
     padding-bottom: 0px;
     padding-left: 0px;    
 }
-
-
 
 .thisIsMyButton
 {
@@ -491,8 +482,14 @@ h6.my_Heading
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 600px){
     .modal-content {
         width: 100%;
+    }
+
+    .myTextBlock 
+    {
+        text-align: left;
+        line-height: 1.5;
     }
 }
