@@ -142,8 +142,14 @@ h6.my_Heading
     letter-spacing: 0.0rem;
     text-align: justify; 
 }
- /* END ----------------------------------------------------------------------- */
-
+/* END ----------------------------------------------------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .myTextBlock 
+    {
+        text-align: left;
+    }
+  }
  p.my_p
  {
     /* to remove space above and below */
