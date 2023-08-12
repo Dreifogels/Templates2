@@ -492,4 +492,9 @@ h6.my_Heading
         text-align: left;
         line-height: 1.5;
     }
+
+    .myCallout
+    {
+        text-align: left;       
+    }
 }
