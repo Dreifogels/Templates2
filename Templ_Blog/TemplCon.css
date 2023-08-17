@@ -497,4 +497,20 @@ h6.my_Heading
     {
         text-align: left;       
     }
+
+    h2.myHeading
+    {
+        font-size: 1.4rem;
+        color: var(--colorInfo);
+    }
+
+    h3.myHeading
+    {
+        font-size: 1.2rem;
+    }
+
+    h4.myHeading
+    {
+        font-size: 1.0rem;
+    }
 }
