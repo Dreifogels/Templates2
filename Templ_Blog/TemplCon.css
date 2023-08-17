@@ -142,6 +142,26 @@ h6.my_Heading
     letter-spacing: 0.0rem;
     text-align: justify; 
 }
+
+.myTextBlockIntro
+{
+    /* to remove space above and below */
+    margin-top: 0px;
+    margin-bottom: var(--marginTextBlock);
+    /* ------------------------------ */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.0rem;
+    text-align: justify; 
+}
 /* END ----------------------------------------------------------------------- */
 
  p.my_p
