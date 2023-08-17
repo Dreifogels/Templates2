@@ -68,6 +68,7 @@ h2.myHeading
     margin-bottom: .5rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
+    font-weight: 900;
     color: var(--colorInfo);
 }
 
@@ -83,6 +84,7 @@ h2.myHeading
         margin-top: 8rem;
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
+        font-weight: 900;
         color: var(--colorInfo);
     }
     /* h2.myHeading:before
@@ -140,16 +142,11 @@ h6.my_Heading
  
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    font-weight: 300;
     line-height: 26px;
     letter-spacing: 0.0rem;
     text-align: justify; 
 }
-
-.myTextBlockIntro
-{
-    font-weight: 600;
-}
-
 
 /* END ----------------------------------------------------------------------- */
 
@@ -201,6 +198,7 @@ h6.my_Heading
     
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    font-weight: 300;
 }
     .myCallout p
     {
