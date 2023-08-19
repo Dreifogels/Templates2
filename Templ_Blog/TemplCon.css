@@ -528,4 +528,8 @@ h6.my_Heading
     {
         margin-top: 4rem;  
     }
+
+    .modal{display: none}
+    .modal-content{display: none;}
+    #caption{display: none;}
 }
