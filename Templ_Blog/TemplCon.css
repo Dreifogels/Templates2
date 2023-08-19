@@ -432,10 +432,10 @@ h6.my_Heading
 
 /* Modal Content (image) */
 .modal-content {
-    margin: auto;
-    display: block;
-    height: 80%;
-    width: auto;
+    margin: auto !important;
+    display: block !important;
+    height: 80% !important;
+    width: auto !important;
     /* max-width: 50%; */
     border-radius: 15px !important;
 }
