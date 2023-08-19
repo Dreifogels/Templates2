@@ -311,7 +311,11 @@ h6.my_Heading
 .myVideoContainer
 {
     margin-top: 0rem;
-
+    margin-bottom: 1rem;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
 
     position: relative;
     overflow: hidden;
