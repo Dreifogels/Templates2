@@ -145,7 +145,7 @@ h6.my_Heading
     font-weight: 300;
     line-height: 26px;
     letter-spacing: 0.0rem;
-    text-align: justify; 
+    text-align: left; 
 }
 
 /* END ----------------------------------------------------------------------- */
@@ -434,7 +434,7 @@ h6.my_Heading
 .modal-content {
     margin: auto;
     display: block;
-    height: 60%;
+    height: 80%;
     width: auto;
     /* max-width: 50%; */
     border-radius: 15px !important;
@@ -444,7 +444,7 @@ h6.my_Heading
 #caption {
     margin: auto;
     display: block;
-    width: 60%;
+    width: 80%;
     max-width: 700px;
     text-align: center;
     color: #ccc;
