@@ -507,6 +507,7 @@ h6.my_Heading
 
     h2.myHeading
     {
+        margin-top: 4rem;
         font-size: 1.4rem;
         color: var(--colorInfo);
     }
