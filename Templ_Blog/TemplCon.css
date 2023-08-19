@@ -488,6 +488,8 @@ h6.my_Heading
     cursor: pointer;
 }
 
+
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 600px){
     .modal-content {
@@ -520,5 +522,10 @@ h6.my_Heading
     h4.myHeading
     {
         font-size: 1.0rem;
+    }
+
+    h2.myHeading-summary
+    {
+        margin-top: 4rem;  
     }
 }
